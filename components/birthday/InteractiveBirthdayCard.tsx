@@ -486,12 +486,12 @@ export function InteractiveBirthdayCard() {
               </div>
 
               {/* Middle Section: Photo & Personal Wishes with Signature */}
-              <div className="flex flex-col items-center w-full max-w-[380px] text-center gap-3">
+              <div className="flex flex-col items-center w-full max-w-[270px] sm:max-w-[350px] text-center gap-3">
                 {/* Portrait Photo with Washi Tape */}
                 <div className="relative mt-1 mb-1">
                   {/* Washi Tape */}
                   <div
-                    className="absolute -top-3.5 left-1/2 -translate-x-1/2 z-20 w-24 h-6"
+                    className="absolute -top-3.5 left-1/2 -translate-x-1/2 z-20 w-22 h-5.5 sm:w-24 sm:h-6"
                     style={{
                       background: "rgba(255, 240, 245, 0.92)",
                       backdropFilter: "blur(2px)",
@@ -501,7 +501,7 @@ export function InteractiveBirthdayCard() {
                     }}
                   />
                   <div
-                    className="overflow-hidden rounded-lg bg-white p-1.5 w-[180px] h-[220px] sm:w-[210px] sm:h-[255px]"
+                    className="overflow-hidden rounded-lg bg-white p-1.5 w-[160px] h-[195px] sm:w-[210px] sm:h-[255px]"
                     style={{
                       boxShadow: "0 10px 28px hsla(347, 60%, 50%, 0.18), 0 3px 8px hsla(347, 60%, 50%, 0.1)",
                       border: "4px solid white",
@@ -517,28 +517,28 @@ export function InteractiveBirthdayCard() {
                   </div>
                 </div>
 
-                {/* Wishes Text — Justified alignment */}
+                {/* Wishes Text — Centered & balanced layout safely inside dashed border */}
                 <p
-                  className="font-sans text-xs sm:text-sm leading-relaxed text-justify"
-                  style={{ color: "hsl(340, 30%, 30%)", textJustify: "inter-word" }}
+                  className="font-sans text-xs sm:text-sm leading-relaxed text-center text-pretty px-1"
+                  style={{ color: "hsl(340, 35%, 25%)" }}
                 >
                   Wishing you a special day that opens up a year of warmth, quiet joy, and endless possibilities. Keep your heart light, your smile bright, and walk a journey paved with meaningful moments and fulfilled dreams.
                 </p>
 
-                <div>
+                <div className="px-1">
                   <span
-                    className="font-display text-sm sm:text-base italic font-semibold text-center block"
-                    style={{ color: "hsl(347, 60%, 52%)" }}
+                    className="font-display text-xs sm:text-sm italic font-semibold text-center text-pretty block"
+                    style={{ color: "hsl(347, 65%, 48%)" }}
                   >
                     May everything you hope for go smoothly, and the days ahead treat you with endless gentleness. Happy birthday, Vy!
                   </span>
                 </div>
 
                 {/* With Love Signature — Included right inside the wishes text content block */}
-                <div className="pt-2 flex flex-col items-center">
-                  <div className="w-16 h-[1.5px] mx-auto mb-2 bg-gradient-to-r from-transparent via-rose-300 to-transparent" />
+                <div className="pt-1 flex flex-col items-center">
+                  <div className="w-14 h-[1.5px] mx-auto mb-1.5 bg-gradient-to-r from-transparent via-rose-300 to-transparent" />
                   <p
-                    className="font-display text-base sm:text-lg italic"
+                    className="font-display text-sm sm:text-lg italic"
                     style={{ color: "hsl(347, 60%, 48%)" }}
                   >
                     With love{SENDER_NAME ? `, ${SENDER_NAME}` : " ♡"}

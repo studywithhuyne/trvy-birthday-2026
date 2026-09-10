@@ -58,7 +58,7 @@ export function BirthdayMessage() {
       </div>
 
       {/* Signature — Only shown if SENDER_NAME exists */}
-      {SENDER_NAME && SENDER_NAME.trim() !== "" && (
+      {Boolean(SENDER_NAME && String(SENDER_NAME).trim()) && (
         <motion.div
           className="mt-8"
           initial={{ opacity: 0 }}

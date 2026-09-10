@@ -517,10 +517,10 @@ export function InteractiveBirthdayCard() {
                   </div>
                 </div>
 
-                {/* Wishes Text — Large, bold & clear text layout */}
+                {/* Wishes Text — Justified alignment for clean straight margins */}
                 <p
-                  className="font-sans text-sm sm:text-base font-medium leading-[1.75] text-center text-pretty px-1"
-                  style={{ color: "hsl(340, 40%, 20%)" }}
+                  className="font-sans text-sm sm:text-base font-medium leading-[1.75] text-justify tracking-normal px-1"
+                  style={{ color: "hsl(340, 40%, 20%)", textJustify: "inter-word" }}
                 >
                   Wishing you a special day that opens up a year of warmth, quiet joy, and endless possibilities. Keep your heart light, your smile bright, and walk a journey paved with meaningful moments and fulfilled dreams.
                 </p>

@@ -48,7 +48,7 @@ export function Sparkles() {
             background: `hsl(347, ${sparkle.saturation}%, ${sparkle.lightness}%)`,
             boxShadow: `0 0 ${sparkle.size * 2.5}px hsla(347, 75%, 62%, 0.4)`,
             animation: `sparkle ${sparkle.duration}s ${sparkle.delay}s ease-in-out infinite`,
-            zIndex: 0,
+            zIndex: 30,
           }}
           aria-hidden="true"
         />

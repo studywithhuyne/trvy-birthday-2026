@@ -43,7 +43,7 @@ export function FloatingHearts() {
   }, []);
 
   return (
-    <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden select-none" aria-hidden="true">
+    <div className="pointer-events-none fixed inset-0 z-30 overflow-hidden select-none" aria-hidden="true">
       {hearts.map((heart) => (
         <motion.span
           key={heart.id}

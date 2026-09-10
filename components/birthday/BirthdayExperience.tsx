@@ -92,10 +92,10 @@ export function BirthdayExperience() {
             transition={{ duration: 1.0, ease: "easeOut" }}
             className="w-full min-h-screen"
           >
-            {/* Continuous side effects layer */}
+            {/* Continuous side effects layer — z-30 to float over card & content */}
             {showSideEffects && (
               <div
-                className="pointer-events-none fixed inset-0 z-0"
+                className="pointer-events-none fixed inset-0 z-30"
                 aria-hidden="true"
               >
                 <FloatingHearts />

@@ -23,24 +23,23 @@ const BALLOON_COLORS = [
 
 export function Balloons() {
   const balloons = useMemo<BalloonData[]>(() => {
-    return Array.from({ length: 4 }, (_, i) => {
-      const isLeft = i % 2 === 0;
-      const leftVal = isLeft ? 2 + Math.random() * 10 : 88 + Math.random() * 10;
+    return Array.from({ length: 7 }, (_, i) => {
+      const leftVal = 5 + Math.random() * 85;
       return {
         id: i,
         left: `${leftVal}%`,
-        size: Math.round(32 + Math.random() * 16),
+        size: Math.round(28 + Math.random() * 18),
         color: BALLOON_COLORS[Math.floor(Math.random() * BALLOON_COLORS.length)],
-        duration: 14 + Math.random() * 8,
-        delay: Math.random() * 6,
-        sway: (Math.random() - 0.5) * 40,
-        rotate: (Math.random() - 0.5) * 20,
+        duration: 11 + Math.random() * 7,
+        delay: Math.random() * 5,
+        sway: (Math.random() - 0.5) * 50,
+        rotate: (Math.random() - 0.5) * 25,
       };
     });
   }, []);
 
   return (
-    <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden select-none" aria-hidden="true">
+    <div className="pointer-events-none fixed inset-0 z-30 overflow-hidden select-none" aria-hidden="true">
       {balloons.map((b) => (
         <motion.div
           key={b.id}

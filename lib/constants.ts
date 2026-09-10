@@ -36,19 +36,19 @@ export const PHOTOS: PhotoItem[] = [
   {
     src: "/images/trvy1.jpg",
     alt: "A cherished memory",
-    caption: "Cô bé ngốc nghếchhhh ✨",
+    caption: "Từ cô bé ngốc nghếchhhh ✨",
     rotation: -3,
   },
   {
     src: "/images/trvy2.jpg",
     alt: "A beautiful moment",
-    caption: "Thiếu nữ xinh đẹp đáng iuuu 🌸",
+    caption: "Đến thiếu nữ xinh đẹp đáng iuuu 🌸",
     rotation: 2,
   },
   {
     src: "/images/trvy3.jpg",
     alt: "A special day",
-    caption: "Trưởng thành rồiiiii 💖",
+    caption: "Sau cùng là trưởng thành rồiiiii 💖",
     rotation: -1.5,
   },
 ];

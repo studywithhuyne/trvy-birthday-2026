@@ -472,21 +472,21 @@ export function InteractiveBirthdayCard() {
               {/* Inside Header */}
               <div className="flex flex-col items-center">
                 <span
-                  className="font-display text-xl sm:text-2xl font-bold italic tracking-widest mb-0.5"
-                  style={{ color: "hsl(347, 70%, 55%)" }}
+                  className="font-display text-2xl sm:text-3xl font-extrabold italic tracking-widest mb-0.5"
+                  style={{ color: "hsl(347, 75%, 52%)" }}
                 >
                   ✦ 18 ✦
                 </span>
                 <h3
-                  className="font-display text-2xl sm:text-3xl font-bold italic tracking-wide"
-                  style={{ color: "hsl(347, 65%, 45%)" }}
+                  className="font-display text-3xl sm:text-4xl font-bold italic tracking-wide"
+                  style={{ color: "hsl(347, 65%, 42%)" }}
                 >
                   Happy Birthday ♡
                 </h3>
               </div>
 
               {/* Middle Section: Photo & Personal Wishes with Signature */}
-              <div className="flex flex-col items-center w-full max-w-[270px] sm:max-w-[350px] text-center gap-3">
+              <div className="flex flex-col items-center w-full max-w-[310px] sm:max-w-[375px] text-center gap-3">
                 {/* Portrait Photo with Washi Tape */}
                 <div className="relative mt-1 mb-1">
                   {/* Washi Tape */}
@@ -501,7 +501,7 @@ export function InteractiveBirthdayCard() {
                     }}
                   />
                   <div
-                    className="overflow-hidden rounded-lg bg-white p-1.5 w-[160px] h-[195px] sm:w-[210px] sm:h-[255px]"
+                    className="overflow-hidden rounded-lg bg-white p-1.5 w-[155px] h-[190px] sm:w-[200px] sm:h-[245px]"
                     style={{
                       boxShadow: "0 10px 28px hsla(347, 60%, 50%, 0.18), 0 3px 8px hsla(347, 60%, 50%, 0.1)",
                       border: "4px solid white",
@@ -510,36 +510,36 @@ export function InteractiveBirthdayCard() {
                     <Image
                       src={PORTRAIT_PHOTO.src}
                       alt={PORTRAIT_PHOTO.alt}
-                      width={210}
-                      height={255}
+                      width={200}
+                      height={245}
                       className="h-full w-full object-cover rounded-xs"
                     />
                   </div>
                 </div>
 
-                {/* Wishes Text — Centered & balanced layout safely inside dashed border */}
+                {/* Wishes Text — Large, bold & clear text layout */}
                 <p
-                  className="font-sans text-xs sm:text-sm leading-relaxed text-center text-pretty px-1"
-                  style={{ color: "hsl(340, 35%, 25%)" }}
+                  className="font-sans text-sm sm:text-base font-medium leading-[1.75] text-center text-pretty px-1"
+                  style={{ color: "hsl(340, 40%, 20%)" }}
                 >
                   Wishing you a special day that opens up a year of warmth, quiet joy, and endless possibilities. Keep your heart light, your smile bright, and walk a journey paved with meaningful moments and fulfilled dreams.
                 </p>
 
                 <div className="px-1">
                   <span
-                    className="font-display text-xs sm:text-sm italic font-semibold text-center text-pretty block"
-                    style={{ color: "hsl(347, 65%, 48%)" }}
+                    className="font-display text-sm sm:text-base italic font-bold text-center text-pretty block"
+                    style={{ color: "hsl(347, 70%, 45%)" }}
                   >
                     May everything you hope for go smoothly, and the days ahead treat you with endless gentleness. Happy birthday, Vy!
                   </span>
                 </div>
 
-                {/* With Love Signature — Included right inside the wishes text content block */}
+                {/* With Love Signature — Large & prominent signature */}
                 <div className="pt-1 flex flex-col items-center">
-                  <div className="w-14 h-[1.5px] mx-auto mb-1.5 bg-gradient-to-r from-transparent via-rose-300 to-transparent" />
+                  <div className="w-16 h-[1.5px] mx-auto mb-1.5 bg-gradient-to-r from-transparent via-rose-400 to-transparent" />
                   <p
-                    className="font-display text-sm sm:text-lg italic"
-                    style={{ color: "hsl(347, 60%, 48%)" }}
+                    className="font-display text-base sm:text-xl font-bold italic"
+                    style={{ color: "hsl(347, 65%, 45%)" }}
                   >
                     With love{SENDER_NAME ? `, ${SENDER_NAME}` : " ♡"}
                   </p>

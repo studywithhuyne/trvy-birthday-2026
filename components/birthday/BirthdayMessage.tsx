@@ -37,13 +37,13 @@ export function BirthdayMessage() {
 
       <div className="divider-romantic my-6" />
 
-      {/* Message paragraphs — Responsive text layout, centered with natural word wrapping */}
-      <div className="w-full max-w-xl space-y-6 sm:space-y-7 text-center px-2 sm:px-4">
+      {/* Message paragraphs — Justified alignment with safe side margins */}
+      <div className="w-[88vw] max-w-lg space-y-5 mx-auto px-3 sm:px-6">
         {paragraphs.map((paragraph, i) => (
           <motion.p
             key={i}
-            className="font-sans text-base sm:text-lg md:text-xl font-normal leading-[1.85] text-center text-pretty"
-            style={{ color: "hsl(340, 35%, 25%)" }}
+            className="font-sans text-sm sm:text-base md:text-lg font-normal leading-[1.85] text-justify tracking-normal"
+            style={{ color: "hsl(340, 45%, 18%)", textJustify: "inter-word" }}
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{

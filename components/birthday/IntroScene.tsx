@@ -17,15 +17,15 @@ export function IntroScene({ onComplete }: IntroSceneProps) {
   const messageLines = INTRO_MESSAGE.split("\n");
 
   useEffect(() => {
-    // Fast 2.2 second auto transition if user doesn't tap
-    const timer = setTimeout(onComplete, 2400);
+    // 5.8 second auto transition if user doesn't tap
+    const timer = setTimeout(onComplete, 5800);
     return () => clearTimeout(timer);
   }, [onComplete]);
 
   return (
     <section
       onClick={onComplete}
-      className="flex min-h-dvh flex-col items-center justify-center px-6 cursor-pointer select-none"
+      className="flex min-h-dvh flex-col items-center justify-center px-6 cursor-pointer select-none relative"
       style={{ background: "linear-gradient(160deg, hsl(350,70%,96%), hsl(30,70%,97%))" }}
       aria-label="Introduction - Tap anywhere to skip"
     >
@@ -77,6 +77,17 @@ export function IntroScene({ onComplete }: IntroSceneProps) {
           ))}
         </div>
       </div>
+
+      {/* Tap hint */}
+      <motion.p
+        className="absolute bottom-8 font-sans text-xs italic tracking-wider"
+        style={{ color: "hsl(340, 25%, 60%)" }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.7 }}
+        transition={{ delay: 2.2, duration: 0.8 }}
+      >
+        (Chạm nhẹ màn hình để tiếp tục ✨)
+      </motion.p>
     </section>
   );
 }

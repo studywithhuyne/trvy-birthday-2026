@@ -67,9 +67,9 @@ export interface PhotoItem {
 }
 
 /* ── Animation Timing (ms) ────────────────────────── */
-export const INTRO_DELAY = 500;
-export const INTRO_LINE_STAGGER = 800;
-export const COUNTDOWN_STEP_DURATION = 650;
+export const INTRO_DELAY = 600;
+export const INTRO_LINE_STAGGER = 1100;
+export const COUNTDOWN_STEP_DURATION = 1200;
 export const TRANSITION_DURATION = 500;
 export const HERO_ENTRANCE_DURATION = 800;
 export const CARD_ENTRANCE_DELAY = 600;

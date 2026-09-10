@@ -385,7 +385,9 @@ export function InteractiveBirthdayCard() {
         >
           {/* ══ FRONT FACE (Mặt Trước Thiệp) ══════════════════════ */}
           <div
-            className="card-face card-romantic flex flex-col items-center justify-between p-6 sm:p-10 relative select-none overflow-hidden"
+            className={`card-face card-romantic flex flex-col items-center justify-between p-6 sm:p-10 relative select-none overflow-hidden transition-opacity duration-300 ${
+              isOpen ? "opacity-0 pointer-events-none" : "opacity-100"
+            }`}
             style={{
               background: "linear-gradient(135deg, hsl(350, 85%, 98%) 0%, hsl(340, 65%, 95%) 100%)",
               border: "2px solid hsl(347, 50%, 82%)",
@@ -416,7 +418,7 @@ export function InteractiveBirthdayCard() {
                 className="font-display text-2xl sm:text-3xl font-bold italic tracking-widest block mb-0.5"
                 style={{ color: "hsl(347, 70%, 55%)" }}
               >
-
+                ✦ 18 ✦
               </span>
               <h2
                 className="font-display text-4xl sm:text-5xl font-bold leading-tight tracking-wide"
@@ -444,7 +446,9 @@ export function InteractiveBirthdayCard() {
 
           {/* ══ BACK FACE (Bên Trong Thiệp Lời Chúc) ══════════════════════ */}
           <div
-            className="card-face card-back flex flex-col items-center justify-between p-1 sm:p-2 relative select-none overflow-hidden"
+            className={`card-face card-back flex flex-col items-center justify-between p-1 sm:p-2 relative select-none overflow-hidden transition-opacity duration-300 ${
+              isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+            }`}
             style={{
               background: "linear-gradient(160deg, hsl(38, 70%, 98%) 0%, hsl(347, 50%, 97%) 100%)",
               border: "2px solid hsl(347, 50%, 82%)",

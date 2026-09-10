@@ -145,6 +145,7 @@ body {
 /* ── Birthday Card Interactive ────────────────── */
 
 .card-scene {
+  -webkit-perspective: 1400px;
   perspective: 1400px;
   width: 100%;
   max-width: var(--card-max-width);
@@ -154,6 +155,7 @@ body {
 
 .card-3d {
   position: relative;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
@@ -161,19 +163,22 @@ body {
 }
 
 .card-3d.is-open {
+  -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
 
 .card-face {
   position: absolute;
   inset: 0;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
   border-radius: 2rem;
-  overflow: hidden;
 }
 
 .card-back {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 

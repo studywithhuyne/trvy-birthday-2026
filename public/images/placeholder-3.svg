@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="350" viewBox="0 0 280 350">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a2518;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d1a12;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="280" height="350" fill="url(#bg3)" rx="4" />
+  <text x="140" y="160" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#d4b896" opacity="0.5">♡</text>
+  <text x="140" y="185" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#d4b896" opacity="0.35">Memory 3</text>
+  <text x="140" y="205" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#d4b896" opacity="0.25">Replace with photo</text>
+</svg>
